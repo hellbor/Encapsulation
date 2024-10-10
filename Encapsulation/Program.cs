@@ -31,9 +31,9 @@ namespace Encapsulation
             Console.WriteLine($"Расстояние от точки A до точки B: {distance}");
 			Console.WriteLine();
 
-/*			double distance2 = Point.Distance(A, B);
+			double distance2 = Point.Distance(A, B);
 			Console.WriteLine($"Расстояние между точками A и B: {distance2}");
-			Console.WriteLine();*/
+			Console.WriteLine();
 		}
 	}
 }

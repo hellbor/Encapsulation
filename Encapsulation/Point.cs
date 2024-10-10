@@ -61,15 +61,6 @@ namespace Encapsulation
 			//Console.WriteLine($"X={GetX()}\tY={GetY()}");
 		}
 
-		public static double Distance(Point A, Point B)
-		{
-			return Math.Sqrt(Math.Pow(A.X - B.Y, 2) + Math.Pow(A.Y - B.Y, 2));
-		}
-		public double Distance(Point other)
-		{
-			return Math.Sqrt(Math.Pow(this.X - other.X, 2) + Math.Pow(this.Y - other.Y, 2));
-		}
-
 		/*public double Distance(Point other)
 		{
 			double x_distance = this.X - other.X;
@@ -77,5 +68,13 @@ namespace Encapsulation
 			double distance = Math.Sqrt(x_distance * x_distance + y_distance * y_distance);
 			return distance;
 		}*/
+		public double Distance(Point other)
+		{
+			return Math.Sqrt(Math.Pow(this.X - other.X, 2) + Math.Pow(this.Y - other.Y, 2));
+		}
+		public static double Distance(Point A, Point B)
+		{
+			return Math.Sqrt(Math.Pow(A.X - B.Y, 2) + Math.Pow(A.Y - B.Y, 2));
+		}
 	}
 }
