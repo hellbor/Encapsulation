@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -59,5 +60,22 @@ namespace Encapsulation
 			Console.WriteLine($"X={X}\tY={Y}");
 			//Console.WriteLine($"X={GetX()}\tY={GetY()}");
 		}
+
+		public static double Distance(Point A, Point B)
+		{
+			return Math.Sqrt(Math.Pow(A.X - B.Y, 2) + Math.Pow(A.Y - B.Y, 2));
+		}
+		public double Distance(Point other)
+		{
+			return Math.Sqrt(Math.Pow(this.X - other.X, 2) + Math.Pow(this.Y - other.Y, 2));
+		}
+
+		/*public double Distance(Point other)
+		{
+			double x_distance = this.X - other.X;
+			double y_distance = this.Y - other.Y;
+			double distance = Math.Sqrt(x_distance * x_distance + y_distance * y_distance);
+			return distance;
+		}*/
 	}
 }
